@@ -60,6 +60,7 @@ public class Curriculum_New_1_18 {
         System.out.println(result);
     }
 
+
     public static void main(String[] args) {
         // 作成したメソッドをここで呼び出してください
         printHello("Hello", 11);
