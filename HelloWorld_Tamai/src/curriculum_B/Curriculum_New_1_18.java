@@ -25,6 +25,10 @@ public class Curriculum_New_1_18 {
     public static void add(double a, double b) {
         System.out.println(a + b);
     }
+    // オーバーロードしたメソッド
+    public static void add(int a, int b) {
+        System.out.println(a + b);
+    }
 
     // Q5：引数に整数を渡すと、1～100までのランダムな数字を引数の回数分格納して
     // 格納した値を順番にコンソールで出力後、格納した値を返すメソッドを作成してください。
@@ -42,13 +46,12 @@ public class Curriculum_New_1_18 {
 
     // Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
     // ※小数点以下も表示されるようにしてください。
-    public static void printAverage(int[] arr) {
+    public static double calculateAverage(int[] arr) {
         int sum = 0;
         for (int num : arr) {
             sum += num;
         }
-        double average = (double) sum / arr.length;
-        System.out.printf("%.2f\n", average);
+        return (double) sum / arr.length;
     }
 
     // Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
@@ -65,7 +68,7 @@ public class Curriculum_New_1_18 {
         printArray(arr);
         add(2.5, 3.5);
         int[] randomNumbers = generateRandomNumbers(5);
-        printAverage(randomNumbers);
-        printBooleanResult(60);
+        double average = calculateAverage(randomNumbers);
+        printBooleanResult(average);
     }
 }
