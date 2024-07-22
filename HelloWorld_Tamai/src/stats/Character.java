@@ -1,23 +1,20 @@
 package stats;
 
-import java.util.Random;
-
 public class Character {
-    private String name;
-    private int hp;
-    private int mp;
-    private int attack;
-    private int speed;
-    private int defense;
+    protected String name;
+    protected int hp;
+    protected int mp;
+    protected int attack;
+    protected int speed;
+    protected int defense;
 
     public Character(String name) {
         this.name = name;
-        Random rand = new Random();
-        this.hp = rand.nextInt(1000);
-        this.mp = rand.nextInt(1000);
-        this.attack = rand.nextInt(500);
-        this.speed = rand.nextInt(1000);
-        this.defense = rand.nextInt(100);
+        generateStats();
+    }
+
+    protected void generateStats() {
+        // This method is intended to be overridden by subclasses
     }
 
     public String getName() {
