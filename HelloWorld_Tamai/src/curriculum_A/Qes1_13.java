@@ -135,6 +135,7 @@ public class Qes1_13 {
 		System.out.println(25 <= old4 || 160 <= height5);
 		
 		
+		
 	}
 
 }
