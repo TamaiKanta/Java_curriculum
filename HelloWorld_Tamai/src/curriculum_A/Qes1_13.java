@@ -21,9 +21,9 @@ public class Qes1_13 {
 		b = 0;
 		s = 0;
 		i = 0;
-		l = 0;
-		f = 0.0f;
-		d = 0.0d;
+		l = 0l; //末尾にlを付ける。
+		f = 0.0f; //末尾にfを付ける。
+		d = 0.0d; //末尾にdを付ける。
 		c = 0;
 		str = null;
 		bl = false;
@@ -31,7 +31,7 @@ public class Qes1_13 {
 		b = 10;
 		s = 100;
 		i = 1000;
-		l = 10000;
+		l = 10000l;
 		f = 9.5f;
 		d = 10.5;
 		c = 65;
@@ -110,7 +110,7 @@ public class Qes1_13 {
 		System.out.println("好きな食べ物は"+food+"です");
 		
 		bmi = weight2 / ((height2 / 100) * (height2 / 100));
-		System.out.printf("BMIは%.1fです%n", bmi);
+		System.out.printf("BMIは%.2fです%n", bmi);
 		
 		
 		old2=24;
