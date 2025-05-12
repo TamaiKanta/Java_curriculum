@@ -24,7 +24,7 @@ public class Qes1_13 {
 		l = 0l; //末尾にlを付ける。
 		f = 0.0f; //末尾にfを付ける。
 		d = 0.0d; //末尾にdを付ける。
-		c = 0;
+		c = '\u0000';  
 		str = null;
 		bl = false;
 		
