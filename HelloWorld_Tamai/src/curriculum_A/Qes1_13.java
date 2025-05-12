@@ -70,7 +70,6 @@ public class Qes1_13 {
 		double bmi = weight2 / ((height2 / 100) * (height2 / 100));
 		System.out.printf("BMIは%.1fです%n", bmi);
 		
-		
 		name="鈴木一郎";
 		System.out.println("初めまして"+name+"です");
 		
