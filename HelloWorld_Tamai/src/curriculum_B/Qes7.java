@@ -50,3 +50,4 @@ public class Qes7 {
 	        scanner.close();
 	    }
 	}
+

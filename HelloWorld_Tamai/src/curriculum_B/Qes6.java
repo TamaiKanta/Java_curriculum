@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Qes6 {
 	    public static void main(String[] args) {
 	    	Scanner sc1 = new Scanner(System.in);
+	    	System.out.print("商品名を「、」区切りで入力してください: ");
 	        String[] products = sc1.nextLine().split("、");
 
 	        Random rand = new Random();
