@@ -10,7 +10,7 @@ public class Curriculum_New_1_18 {
     }
 
     // Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッド
-    public static void multiplyAndPrint(int a, int b) {
+    public static void addAndPrint(int a, int b) {
         System.out.println(a * b);
     }
 
@@ -66,7 +66,7 @@ public class Curriculum_New_1_18 {
         printHello("Hello JavaSE", 11);
 
         // Q2
-        multiplyAndPrint(3, 7);
+        addAndPrint(3, 7);
 
         // Q3
         int[] sampleArray = {1, 2, 3, 4, 5};
