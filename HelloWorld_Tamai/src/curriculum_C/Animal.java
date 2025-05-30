@@ -20,4 +20,3 @@ public class Animal {
 	        System.out.println("現在の日時: " + sdf.format(date));
 	    }
 	}
-
