@@ -8,6 +8,7 @@ public class Hero extends Character {
 
     public Hero(String name) {
         super(name);
+        generateStats(); 
     }
 
     protected void generateStats() {

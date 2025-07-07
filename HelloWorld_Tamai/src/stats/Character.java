@@ -10,7 +10,7 @@ public class Character {
 
     public Character(String name) {
         this.name = name;
-        generateStats();
+        // generateStats();
     }
 
     protected void generateStats() {
