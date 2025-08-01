@@ -1,22 +1,18 @@
 package curriculum_30;
 
 class Main {
-	  public static void main(String[] args) {
-	    // 問題5: weight=60もコンストラクタの引数に追加
-	    Person person1 = new Person("鈴木太郎", 20, 1.7, 60);
+  public static void main(String[] args) {
+    Person person1 = new Person("鈴木太郎", 20, 1.7, 60);
 
-	    // フィールド出力
-	    System.out.println(person1.name);
-	    System.out.println(person1.age);
-	    System.out.println(person1.height);
-	    System.out.println(person1.weight);
-	    // bmi算出・表示（小数点2桁まで表示してみます）
-	    System.out.printf("%.2f\n", person1.bmi());
+    // 見本通りフィールド出力（weightの行は見本に無いので削除）
+    System.out.println(person1.name);
+    System.out.println(person1.age);
+    System.out.println(person1.height);
 
-	    // printメソッド呼び出し
-	    person1.print();
+    // printメソッド呼び出し（BMI出力もprint()でまとめて行う）
+    person1.print();
 
-	    // 合計人数の表示
-	    Person.printCount();
-	  }
-	}
+    // 合計人数の表示
+    Person.printCount();
+  }
+}
